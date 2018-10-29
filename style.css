@@ -1,0 +1,49 @@
+.book_title {
+    display: none;
+}
+.image {
+    cursor: pointer;
+}
+
+.image {
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+
+.image:hover {
+  transform: rotateY(180deg);
+
+}
+
+.books .image {
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.book_title{
+      display: block;
+}
+
+/*
+
+.book_container {
+    perspective: 1000;
+}
+
+.books {
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+
+.book_container:hover .books {
+    transform: rotateY(180deg);
+}
+
+.face {
+    backface-visibility: hidden; 
+}
+
+.face.title_info {
+    display: block;
+    transform: rotateY(180deg);
+}*/
