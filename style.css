@@ -1,3 +1,4 @@
+/*
 .book_title {
     display: none;
 }
@@ -23,6 +24,7 @@
 .book_title{
       display: block;
 }
+*/
 
 /*
 
@@ -47,3 +49,114 @@
     display: block;
     transform: rotateY(180deg);
 }*/
+
+.book_container {
+    perspective: 1000px;
+}
+
+.book_container:hover .book_list,
+.book_container.hover .book_list {
+    transform: rotateY(180deg);
+}
+
+.book_list {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    margin-bottom: 700px;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0;
+    height: 618px;
+ 
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: rgba(0, 0, 0, 0.41);
+    text-align: justify;
+    padding: 20px;
+}
+
+/*
+.front {
+    position: relative;
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.front:hover .back {
+    -webkit-transform: rotate(0);
+	-moz-transform: rotate(0);
+	-o-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+.back {
+    position: absolute;
+	height: 100%;
+	width: 100%;
+            	top: -100%;
+    -webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	-webkit-transition-delay: .5s;
+	-moz-transition-delay: .5s;
+	-o-transition-delay: .5s;
+	-ms-transition-delay: .5s;
+	transition-delay: .5s;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.back h3 {
+    position: relative;
+	left: 100%;
+    -webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	-ms-transition-delay: 1s;
+	transition-delay: 1s;
+}
+.back p {
+    position: relative;
+	left: 100%;
+    -webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
+	-webkit-transition-delay: 1.3s;
+	-moz-transition-delay: 1.3s;
+	-o-transition-delay: 1.3s;
+	-ms-transition-delay: 1.3s;
+	transition-delay: 1.3s;
+}
+
+.front:hover h3, .front:hover p {
+    left: 0;
+}
+*/
+
+
+
+
