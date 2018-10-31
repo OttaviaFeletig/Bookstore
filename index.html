@@ -11,18 +11,18 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="row">
 
-            <img class="col" src="#" alt="logo">
+            <img class="col-2 h-100 logo" src="book%20icon.png" alt="logo">
 
-            <input id="search_bar" class="form-control col" type="text" placeholder="Search...">
+            <input id="search_bar" class="d-flex justify-content-end form-control col-4" type="text" placeholder="Search...">
 
         </div>
 
 
-        <div id="books_list">
+        <div id="books_list" class="mt-5 d-flex flex-wrap justify-content-center">
 
         </div>
         
@@ -32,8 +32,8 @@
                 <div class="modal-content">
                   <div class="modal-header">
                       <div>
-                          <button class="btn" id="moveBack"></button>
-                          <button class="btn" id="moveForward"></button>
+                          <button class="btn" id="moveBack">Back</button>
+                          <button class="btn" id="moveForward">Forward</button>
                       </div>
                   </div>
                    <div id="detalle"></div>

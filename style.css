@@ -52,6 +52,7 @@
 
 .book_container {
     perspective: 1000px;
+    width: 29%;
 }
 
 .book_container:hover .book_list,
@@ -62,15 +63,12 @@
 .book_list {
     transition: 0.6s;
     transform-style: preserve-3d;
-    margin-bottom: 700px;
+    
+  
 }
 
 .front, .back {
     backface-visibility: hidden;
-    position: absolute;
-    left: 0;
-    height: 618px;
- 
 }
 
 .front {
@@ -80,9 +78,14 @@
 
 .back {
     transform: rotateY(180deg);
-    background-color: rgba(0, 0, 0, 0.41);
     text-align: justify;
     padding: 20px;
+    width: 320px;
+    position: absolute;
+}
+
+.cover {
+    width: 300px;
 }
 
 /*
@@ -167,4 +170,8 @@
 
 .modal-content {
     width: 642px;
+}
+
+.logo {
+  
 }
